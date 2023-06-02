@@ -7,6 +7,8 @@ Rockbuster Stealth LLC. is a fictional video rental company looking to launch an
 ## Data
 Opensource tutorial data available from PostgreSQL.
 
+The dataset is comprised of multiple tables, descriptions and Entity Realtional Diagram can be found in the Rockbuster Data Dictionary.
+
 ## Tools
 * PostgreSQL
 * Tableau
