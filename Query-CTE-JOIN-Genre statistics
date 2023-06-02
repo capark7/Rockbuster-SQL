@@ -1,0 +1,35 @@
+/*In the top 10 countries by revenue, what movie genres are most popular and other genre statistics?*/					
+WITH top_10_countries_cte AS					
+	(SELECT country.country				
+	,SUM(payment.amount) AS revenue_per_country				
+	FROM customer 				
+	INNER JOIN address ON customer.address_id = address.address_id				
+	INNER JOIN city ON address.city_id = city.city_id				
+	INNER JOIN country ON city.country_ID = country.country_ID				
+	INNER JOIN payment ON customer.customer_id = payment.customer_id				
+	GROUP BY country				
+	ORDER BY revenue_per_country DESC				
+	LIMIT 10)				
+					
+SELECT category.name AS genre					
+	,COUNT(DISTINCT(film.film_id)) AS number_of_films				
+	,SUM(payment.amount) AS total_revenue				
+	,ROUND(SUM(payment.amount)/COUNT(DISTINCT(film.film_id)),2) AS avg_revenue				
+	,COUNT(rental.rental_id) AS number_of_rental				
+	,(COUNT(rental.rental_id) / COUNT(DISTINCT(film.film_id))) AS frequency_of_rental				
+	,ROUND(AVG(film.rental_duration), 2) AS avg_rental_duration				
+	,ROUND(AVG(film.rental_rate), 2) AS avg_rental_rate				
+FROM category 					
+INNER JOIN film_category FC ON category.category_id = FC.category_id					
+INNER JOIN film ON FC.film_id = film.film_id					
+INNER JOIN inventory ON film.film_id = inventory.film_id					
+INNER JOIN rental ON inventory.inventory_id = rental.inventory_id					
+INNER JOIN payment ON rental.rental_id = payment.rental_id					
+INNER JOIN customer ON payment.customer_id = customer.customer_id					
+INNER JOIN address ON customer.address_id = address.address_id					
+INNER JOIN city ON address.city_id = city.city_id					
+INNER JOIN country ON city.country_ID = country.country_ID					
+INNER JOIN top_10_countries_cte ON top_10_countries_cte.country = country.country					
+GROUP BY category.name					
+ORDER BY total_revenue DESC					
+;					
