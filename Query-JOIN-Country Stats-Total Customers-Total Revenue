@@ -1,0 +1,14 @@
+/* How many customers are in each country? What is the total revenue per country? Average revenue per customer by country?  Average number of rentals?*/	
+SELECT country.country	
+	,COUNT(DISTINCT customer.customer_id) AS customer_count
+	,SUM(payment.amount) AS revenue_per_country
+	,ROUND((SUM(payment.amount)/COUNT(DISTINCT customer.customer_id)),2) AS revenue_per_customer
+	,(COUNT(DISTINCT(payment.rental_id)) / COUNT(DISTINCT customer.customer_id)) AS rentals_per_customer
+FROM customer 	
+INNER JOIN address ON customer.address_id = address.address_id	
+INNER JOIN city ON address.city_id = city.city_id	
+INNER JOIN country ON city.country_ID = country.country_ID	
+INNER JOIN payment ON customer.customer_id = payment.customer_id	
+GROUP BY country	
+ORDER BY revenue_per_country DESC	
+;	
