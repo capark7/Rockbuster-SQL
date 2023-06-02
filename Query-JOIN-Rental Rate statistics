@@ -1,0 +1,14 @@
+/*Rental Rate statistics: What is the total revenue, #of titles, rental frequency for each rental rate?*/	
+SELECT film.rental_rate AS rental_rate	
+	   ,SUM(payment.amount) AS total_revenue
+	   ,COUNT(DISTINCT(film.film_id)) AS number_of_films
+	   ,ROUND((SUM(payment.amount) / COUNT(DISTINCT(film.film_id))),2) AS revenue_per_film
+	   ,COUNT(rental.rental_id) AS number_of_rentals
+	   ,ROUND((SUM(payment.amount) / COUNT(rental.rental_id)),2) AS revenue_per_rental
+FROM film	
+INNER JOIN inventory ON film.film_id = inventory.film_id	
+INNER JOIN rental ON inventory.inventory_id = rental.inventory_id	
+INNER JOIN payment ON rental.rental_id = payment.rental_id	
+GROUP BY rental_rate	
+ORDER BY total_revenue DESC	
+;	
