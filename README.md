@@ -11,3 +11,6 @@ Opensource tutorial data available from PostgreSQL.
 * PostgreSQL
 * Tableau
 * Powerpoint
+
+## Visialization
+Visualizations for this project can be found on Tableau [here](https://public.tableau.com/views/Task3_10RockbusterLaunchVisualizations/RockbusterLaunchVizzes?:language=en-US&:display_count=n&:origin=viz_share_link)
