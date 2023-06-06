@@ -1,18 +1,37 @@
 # Rockbuster-SQL
-Analysis of the PostgreSQL Sample Database of a fictional video rental company using SQL as part of the Career Foundry Data Analysis course.
 
-## Objectives
-Rockbuster Stealth LLC. is a fictional video rental company looking to launch an online video rental service. For that purpose they want to gain insights of their current portfolic performance and customer base to inform their company strategy.
+### SUMMARY
+A data analysis project using PostgreSQL to analyze data from a fictional movie rental company, Rockbuster Stealth.
 
-## Data
-Opensource tutorial data available from PostgreSQL.
+### OBJECTIVES
+* Load and clean data.
+
+* Document the relationships between tables, columns, and keys in a data dictionary and an entity relationship diagram.
+
+* Query the database to answer questions from marketing and sales teams.
+
+* Highlight key results to executive team as well as document all work for the rest of the data department.
+
+### DATA
+Fictitious data available [here](http://www.postgresqltutorial.com/wp-content/uploads/2019/05/dvdrental.zip)
 
 The dataset is comprised of multiple tables. Descriptions and Entity Relationship Diagram can be found in the Rockbuster Data Dictionary.
 
-## Tools
-* PostgreSQL
-* Tableau
-* Powerpoint
+### TOOLS
+*Language:* PostgreSQL
 
-## Visialization
+*Software:* pgAdmin, DbVisualizer, Tableau, Excel
+
+### SKILLS DEMONSTRATED
+* **Cleaning data:** checked and addressed duplicates, non-uniform data, and missing values.
+
+* **Joining tables:** selected the type of joins and sequence of joins in order to minimize the time/memory needed.
+
+* **Writing queries:** explored basic descriptive statistics (max/min, mean or mode) for variables and used GROUP BY and ORDER BY to answer more complicated questions from executives. 
+
+* **Coding with Common Table Expressions (CTEs):** designed CTEs that would make code more readable and easier to reuse.
+
+* **Reporting results:** Customized the reports to suit the audience. Executives received a Powerpoint presentation with answers to key questions and recommendations. In addition to this, a data dictionary and an Excel workbook were created for other data analysts to view my queries and results.
+
+### RELATED LINKS
 Visualizations for this project can be found on Tableau [here](https://public.tableau.com/views/Task3_10RockbusterLaunchVisualizations/RockbusterLaunchVizzes?:language=en-US&:display_count=n&:origin=viz_share_link)
