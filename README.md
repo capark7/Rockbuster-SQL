@@ -23,13 +23,13 @@ The dataset is comprised of multiple tables. Descriptions and Entity Relationshi
 *Software:* pgAdmin, DbVisualizer, Tableau, Excel
 
 ### SKILLS DEMONSTRATED
-* **Cleaning data:** checked and addressed duplicates, non-uniform data, and missing values.
+* **Cleaning data:** Checked and addressed duplicates, non-uniform data, and missing values.
 
-* **Joining tables:** selected the type of joins and sequence of joins in order to minimize the time/memory needed.
+* **Joining tables:** Selected the type of joins and sequence of joins in order to minimize the time/memory needed.
 
-* **Writing queries:** explored basic descriptive statistics (max/min, mean or mode) for variables and used GROUP BY and ORDER BY to answer more complicated questions from executives. 
+* **Writing queries:** Explored basic descriptive statistics (max/min, mean or mode) for variables and used GROUP BY and ORDER BY to answer more complicated questions from executives. 
 
-* **Coding with Common Table Expressions (CTEs):** designed CTEs that would make code more readable and easier to reuse.
+* **Coding with Common Table Expressions (CTEs):** Designed CTEs that would make code more readable and easier to reuse.
 
 * **Reporting results:** Customized the reports to suit the audience. Executives received a Powerpoint presentation with answers to key questions and recommendations. In addition to this, a data dictionary and an Excel workbook were created for other data analysts to view my queries and results.
 
