@@ -34,4 +34,4 @@ The dataset is comprised of multiple tables. Descriptions and Entity Relationshi
 * **Reporting results:** Customized the reports to suit the audience. Executives received a Powerpoint presentation with answers to key questions and recommendations. In addition to this, a data dictionary and an Excel workbook were created for other data analysts to view my queries and results.
 
 ### RELATED LINKS
-Visualizations for this project can be found on Tableau [here](https://public.tableau.com/views/Task3_10RockbusterLaunchVisualizations/RockbusterLaunchVizzes?:language=en-US&:display_count=n&:origin=viz_share_link)
+Visualizations for this project can be found on Tableau [here](https://public.tableau.com/views/RockbusterStealthVisualizations_16981849162210/RockbusterLaunchVizzes?:language=en-US&:display_count=n&:origin=viz_share_link)
